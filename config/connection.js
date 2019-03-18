@@ -8,13 +8,6 @@ var connection = mysql.createConnection({
     password: process.env.DB_PASS,
     database: process.env.DB_NAME
 });
-/*var connection = mysql.createConnection({
-    host: "localhost",
-    port: 3306,
-    user: "root",
-    password: "3dvVfQ6Wgqm3fK9s",
-    database: "burgers_db"
-});*/
 
 connection.connect(function(err) {
     if (err) {
