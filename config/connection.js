@@ -15,7 +15,7 @@ var connection = mysql.createConnection({
     user: "root",
     password: "3dvVfQ6Wgqm3fK9s",
     database: "burgers_db"
-  });
+});
 
 connection.connect(function(err) {
     if (err) {
