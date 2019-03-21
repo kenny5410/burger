@@ -27,8 +27,8 @@
         <div class="col">
             <ol> 
                 {{#each burgers}}
-                    {{#if devoured}}
-                        {{> burgers/burger-block devoured=false}}
+                    {{#if this.devoured}}
+                        <li class="form-control">{{this.id}}. {{this.name}}</li>
                     {{/if}}
                 {{/each}}
             </ol>            
